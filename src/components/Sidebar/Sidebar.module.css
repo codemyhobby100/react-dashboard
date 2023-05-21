@@ -1,13 +1,14 @@
 .container {
   height: 100vh;
-  width: 6%;
-  max-width: 6rem;
+  width: fit-content;
+  max-width: fit-content;
   display: flex;
-
   flex-direction: column;
   align-items: center;
   padding: 2rem 0rem;
   background: rgb(20, 20, 20);
+  position: sticky;
+  top: 0px;
 }
 
 .logo{
@@ -24,7 +25,30 @@
     flex-direction: column;
     gap: 5rem;
 }
+.item{
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin:0pc 10px;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+.item:hover{
+    background: #707070;
+}
+.item.active{
+    background: #707070;
+}
 
+@media screen and (max-width : 800px) {
+    .item p{
+        display: none;
+    }
+}
+.item p {
+    margin: auto 0px;
+}
 .item>svg{
     fill: white;
     width: 3rem;

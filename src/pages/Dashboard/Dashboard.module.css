@@ -6,6 +6,12 @@
   gap: 2rem;
 }
 
+@media screen and (max-width: 1134px) {
+  .container{
+    flex-direction: column;
+  }
+}
+
 .dashboard {
   width: 70%;
   display: flex;
@@ -13,6 +19,11 @@
   gap: 1rem;
 }
 
+@media screen and (max-width: 1134px) {
+  .dashboard{
+    width: 100%;
+  }
+}
 .dashboardHead {
   display: flex;
   flex-direction: column;

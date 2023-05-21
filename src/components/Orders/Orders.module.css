@@ -4,6 +4,12 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+@media screen and (max-width : 1134px) {
+  .container{
+    width: 100%;
+  }
+}
 .head {
   display: flex;
   align-items: center;

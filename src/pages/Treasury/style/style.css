@@ -1,0 +1,124 @@
+.treasury {
+  width: 100%;
+}
+.treasury button {
+  border: none;
+  margin: 0px 20px;
+  padding: 10px 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.treasury button p {
+  margin: 0px;
+}
+.treasury__info {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.treasury__info:first-child::after {
+  content: "";
+  position: absolute;
+  height: 0.4px;
+  width: 100%;
+  background: rgb(83, 83, 83);
+  bottom: 0px;
+}
+.treasury__info.actions .actions__yellow {
+  border: 1px solid yellow;
+  background: rgba(255, 255, 0, 0.527);
+}
+.treasury__value {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.treasury__value.asset__values {
+  display: flex;
+  justify-content: space-between;
+  gap: 3vw;
+}
+@media screen and (max-width: 800px) {
+  .treasury__value.asset__values {
+    overflow-x: scroll;
+  }
+}
+.treasury__value.asset__values .asset p {
+  margin: 0px;
+  font-weight: lighter;
+  font-size: 24px;
+}
+@media screen and (max-width: 1024px) {
+  .treasury__value.asset__values .asset p {
+    font-weight: 18px;
+  }
+}
+.treasury__value.asset__values .asset:first-child .value__whole {
+  font-size: 2em;
+}
+.treasury__value.asset__values .asset .title {
+  letter-spacing: 3px;
+  margin: 10px 0px;
+}
+.treasury__value.asset__values .asset .value {
+  display: flex;
+  font-weight: 400;
+}
+.treasury__value.asset__values .asset .value__decimal {
+  font-size: 100%;
+  font-weight: 100;
+}
+.treasury__account {
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.treasury__account::before {
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.842));
+  width: 100%;
+  height: 80%;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  bottom: 0px;
+}
+.treasury__account .account {
+  display: flex;
+  padding: 40px 0px;
+}
+.treasury__account .account__color {
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  z-index: 10;
+}
+.treasury__account .account__value {
+  z-index: 10;
+}
+.treasury__account .account__value p {
+  margin: 0px;
+  margin-bottom: 10px;
+}
+.treasury__account > div:nth-child(1) {
+  flex: 1;
+}
+.treasury__account > div:nth-child(2) {
+  flex: 2;
+}
+.treasury__account > div:nth-child(3) {
+  flex: 3;
+}
+.treasury__account > div:nth-child(4) {
+  flex: 3;
+}
+.treasury__account > div:nth-child(5) {
+  flex: 5;
+}/*# sourceMappingURL=style.css.map */
